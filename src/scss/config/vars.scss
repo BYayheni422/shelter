@@ -1,0 +1,27 @@
+$fontSize: 20px;
+$fontFamily: "Georgia", sans-serif;
+
+$widthContainer: 1800px;
+$headerHeight: 100px;
+$footerHeight: 0;
+
+$whiteColor: #ffffff;
+$blackColor: #333b41;
+$grayColor: #bdbdbd;
+$orangeColor: #fe9013;
+$redColor: #d31414;
+
+$firstAccentColor: $blackColor;
+$secondAccentColor: $redColor;
+
+$fontColor: $blackColor;
+$mainRadius: 10px;
+
+$standartTrans: all 280ms ease-in-out 0ms;
+$btnBoxShadow: 0px 2px 3px rgba(#000, 10%), 0px 8px 3px rgba(#000, 10%);
+
+$lightBoxShadow: 0 0 2px 0 rgba(#000, 10%), 0 0 4px 0 rgba(#000, 10%),
+  0 0 8px 0 rgba(#000, 10%);
+
+$hoverBoxShadow: 0 0 5px 0 rgba(#000, 10%), 0 0 10px 0 rgba(#000, 10%),
+  0 0 15px 0 rgba(#000, 10%);

@@ -1,0 +1,108 @@
+@use "sass:math";
+
+// @import "config/animations";
+@import "config/vars";
+@import "config/scrollbar";
+@import "config/global";
+@import "config/reset";
+@import "config/mixins";
+
+// Основные цвета
+$mainColor: #4c4c4c; // Цвет шрифта по умолчанию
+
+// Минимальная ширина страницы
+$minWidth: 320;
+// Ширина полотна (макета)
+$maxWidth: 1280;
+// Ширина ограничивающего контейнера (0 = нет ограничения)
+$maxWidthContainer: 1200;
+// Общий отступ у контейнера
+// (30 = по 15px слева и справа, 0 = нет отступа)
+$containerPadding: 80;
+
+// Ширина срабатывания первого брейкпоинта
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+// Брейк-поинты
+$pc: 1199px; // ПК, ноутбуки, некоторые планшеты в горизонтальном положении
+$tablet: 767px; // Планшеты, некоторые телефоны в горизонтальном положении
+$mobile: 480px; // Телефоны L
+
+body {
+  font-weight: 400;
+  font-style: normal;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  min-width: 320px;
+  // Скролл заблокирован
+  .lock & {
+    overflow: hidden;
+    touch-action: none;
+  }
+  // Сайт загружен
+  // .loaded & {
+  // }
+}
+
+// Оболочка wrapper ============================================================================================================================================================================================================================================================================================================================================================================================================================================
+
+.wrapper {
+  // Прижимаем footer
+  > main {
+    flex: 1 1 auto;
+  }
+  // Фикс для слайдеров
+  > * {
+    min-width: 0;
+  }
+}
+// Ограничивающий контейнер ======================================================================================================================================================================================================================
+
+// Тип адаптива:
+// 1 = отзывчивость (у контейнера нет брейкпоинтов),
+// 2 = по брейк-поинтам (контейнер меняет свою ширину по брейк-поинтам)
+$responsiveType: 2;
+
+/*
+(i) Стили будут применяться ко 
+всем классам содержащим *__container
+Например header__container, main__container и т.д.
+Снипет (HTML): cnt
+*/
+@if ($responsiveType==1) {
+  // Отзывчивая
+  [class*="__container"] {
+    @if ($maxWidthContainer>0) {
+      max-width: rem($maxWidthContainer);
+      margin: 0 auto;
+    }
+    @if ($containerPadding>0) {
+      padding: 0 rem(math.div($containerPadding, 2));
+    }
+  }
+} @else {
+  // По брейк-поинтам
+  [class*="__container"] {
+    @media (max-width: $mobile) {
+      max-width: clamp(300px, 100vw, 480px);
+      padding: 0 10px;
+    }
+    @media (min-width: $mobile) {
+      max-width: clamp(480px, 100vw, 767px);
+      padding: 0 20px;
+    }
+    @media (min-width: $tablet) {
+      max-width: clamp(767px, 100vw, 1199px);
+      padding: 0 30px;
+    }
+    @media (min-width: $pc) {
+      max-width: clamp(992px, 100vw, 1280px);
+      padding: 0 40px;
+    }
+  }
+}
+
+@import "home";
+@import "footer";
+@import "header";
+// @import "config/popup";

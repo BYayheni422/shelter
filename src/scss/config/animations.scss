@@ -1,0 +1,88 @@
+// Keyframes
+
+@keyframes translateY {
+  from {
+    transform: translateY(-130%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes quadmenu_ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(40, 40);
+  }
+}
+@keyframes light_ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(400, 400);
+  }
+}
+@keyframes tecst_scale {
+  0% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+
+@keyframes anim3d {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+
+  to {
+    transform: rotateX(20deg) rotateY(15deg);
+  }
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotate(0);
+    transform-origin: 39px 91px 0;
+  }
+  to {
+    transform: rotate(360deg);
+    transform-origin: 39px 91px 0;
+  }
+}
+@keyframes rotate360-2 {
+  from {
+    transform: rotate(-90deg);
+    transform-origin: 39px 91px 0;
+  }
+  to {
+    transform: rotate(270deg);
+    transform-origin: 39px 91px 0;
+  }
+}
+@keyframes rotate360-3 {
+  from {
+    transform: rotate(135deg);
+    transform-origin: 39px 91px 0;
+  }
+  to {
+    transform: rotate(495deg);
+    transform-origin: 39px 91px 0;
+  }
+}

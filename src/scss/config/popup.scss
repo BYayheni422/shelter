@@ -1,0 +1,156 @@
+.popup {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 5;
+  visibility: hidden;
+}
+
+.popap__area {
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  cursor: pointer;
+}
+.popup.open {
+  pointer-events: all;
+  opacity: 1;
+  visibility: visible;
+}
+.popup.open .popup__content {
+  transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+  opacity: 1;
+  pointer-events: all;
+}
+
+.popup__content {
+  transition: all 0.5s ease 0s;
+  opacity: 0;
+  transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+  padding: 30px 20px;
+  position: relative;
+  z-index: 5;
+}
+.popup__content_image {
+  padding: 0;
+}
+.popup__image img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.popup__close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 20px;
+  color: #000;
+  text-decoration: none;
+}
+.popup__title {
+  font-size: 40px;
+  margin: 0px 0px 1em 0px;
+}
+
+.popup__close {
+  cursor: pointer;
+  background-color: transparent;
+  border: unset;
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: -webkit-filter 0.5s ease-in-out;
+  transition: -webkit-filter 0.5s ease-in-out;
+  transition: filter 0.5s ease-in-out;
+  transition: filter 0.5s ease-in-out, -webkit-filter 0.3s ease-in-out;
+}
+
+.popup__card {
+  width: 267px;
+  height: 391px;
+  background: #f1f3f2;
+  border-radius: 20px;
+  padding-bottom: 20px;
+  .testimonials__card {
+    padding-bottom: 26px;
+  }
+}
+// .popup__card {
+//     -webkit-box-orient: vertical;
+//     -webkit-box-direction: normal;
+//     background-color: #f1f3f2;
+//     border-radius: 20px;
+//     display: -webkit-box;
+//     display: -ms-flexbox;
+//     display: flex;
+//     -ms-flex-direction: column;
+//     flex-direction: column;
+//     max-height: 391px;
+//     padding: 15px 15px 19px 16px;
+//     position: relative;
+
+//     &::before {
+//         background: linear-gradient(
+//                 315.75deg,
+//                 hsla(13, 98%, 83%, 0.74) 30.06%,
+//                 rgba(243, 169, 248, 0.66) 50.74%,
+//                 #e0d8f0 80.49%,
+//                 #eaf7fe 127.9%,
+//                 #eaf7fe 149.54%
+//             ),
+//             linear-gradient(
+//                 315.75deg,
+//                 hsla(13, 98%, 83%, 0.74) 30.06%,
+//                 rgba(243, 169, 248, 0.66) 50.74%,
+//                 #e0d8f0 80.49%,
+//                 #eaf7fe 127.9%,
+//                 #eaf7fe 149.54%
+//             );
+//         border-radius: 20px;
+//         content: "";
+//         inset: 0;
+//         -webkit-mask: -webkit-gradient(
+//                     linear,
+//                     left top,
+//                     left bottom,
+//                     color-stop(0, #fff)
+//                 )
+//                 content-box,
+//             -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+//         -webkit-mask: linear-gradient(#fff 0 0) content-box,
+//             linear-gradient(#fff 0 0);
+//         mask: -webkit-gradient(
+//                     linear,
+//                     left top,
+//                     left bottom,
+//                     color-stop(0, #fff)
+//                 )
+//                 content-box,
+//             -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+//         mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+//         -webkit-mask-composite: xor;
+//         mask-composite: exclude;
+//         padding: 2px;
+//         position: absolute;
+//     }
+// }
