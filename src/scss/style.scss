@@ -1,10 +1,10 @@
 @use "sass:math";
 
-// @import "config/animations";
 @import "config/vars";
+@import "config/reset";
+// @import "config/animations";
 @import "config/scrollbar";
 @import "config/global";
-@import "config/reset";
 @import "config/mixins";
 
 // Основные цвета

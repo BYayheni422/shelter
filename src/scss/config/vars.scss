@@ -5,16 +5,18 @@ $widthContainer: 1800px;
 $headerHeight: 100px;
 $footerHeight: 0;
 
-$whiteColor: #ffffff;
-$blackColor: #333b41;
-$grayColor: #bdbdbd;
-$orangeColor: #fe9013;
-$redColor: #d31414;
+$colorWhite: #ffffff;
+$colorLight: #fafafa;
+$colorDarkS: #cdcdcd;
+$colorDarkL: #545454;
+$colorDark3xl: #292929;
+$bgHover: #fddcc4;
+$colorPrimary: #f1cdb3;
 
-$firstAccentColor: $blackColor;
-$secondAccentColor: $redColor;
+$firstAccentColor: $colorDarkL;
+$secondAccentColor: $colorDarkS;
 
-$fontColor: $blackColor;
+$fontColor: $colorDarkL;
 $mainRadius: 10px;
 
 $standartTrans: all 280ms ease-in-out 0ms;

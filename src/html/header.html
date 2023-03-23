@@ -1,37 +1,37 @@
 <header class="header">
-  <div class="header__container container">
-    <div class="header__logo">
-      <a target="_blank" href="#">Logo</a>
-    </div>
-    <h1>Shelter</h1>
-    <nav class="header__menu menu">
-      <div class="menu__list">
-        <div class="menu__item">
-          <a class="menu__link" target="_blank" href="#">Logo</a>
-        </div>
-        <div class="menu__item">
-          <a class="menu__link"></a>
-        </div>
-        <div class="menu__item">
-          <a class="menu__link"></a>
-        </div>
-        <div class="menu__item">
-          <a class="menu__link"></a>
-        </div>
-        <div class="menu__item">
-          <a class="menu__link"></a>
-        </div>
+  <div class="header__container">
+    <div class="header__content">
+      <a class="header__logo logo" target="_blank" href="#">
+        <strong class="logo__title">Cozy House</strong>
+        <p class="logo__subtitle">Shelter for pets in Boston</p>
+      </a>
+      <nav class="header__menu menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link paragraph-l menu__link_active"
+              >About the shelter</a
+            >
+          </li>
+          <li class="menu__item">
+            <a class="menu__link paragraph-l">Our pets</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link paragraph-l">Help the shelter</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link paragraph-l">Contacts</a>
+          </li>
+        </ul>
+        <div class="header__blur"></div>
+      </nav>
+
+      <div class="burger-wrapper">
+        <button type="button" class="burger" aria-label="burger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
-
-      <div class="menu__blur"></div>
-    </nav>
-
-    <div class="burger-wrapper">
-      <button type="button" class="burger" aria-label="burger-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
     </div>
   </div>
 </header>

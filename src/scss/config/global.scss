@@ -25,3 +25,101 @@
   left: 0;
   top: 0;
 }
+
+h2 {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 130%;
+  /* or 57px */
+}
+
+h3 {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  /* or 45px */
+  letter-spacing: 0.06em;
+}
+
+h4 {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  /* identical to box height, or 23px */
+  letter-spacing: 0.06em;
+}
+
+h5 {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+  /* identical to box height, or 17px */
+  letter-spacing: 0.06em;
+}
+
+.paragraph-l {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  /*  or 24px */
+}
+
+.paragraph-s {
+  font-family: "Arial";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  /* or 18px */
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 45px;
+  gap: 10px;
+  cursor: pointer;
+
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: $colorDark3xl;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  border-radius: 100px;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-primary {
+  background: $colorPrimary;
+
+  &:hover {
+    background: $bgHover;
+  }
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid $colorPrimary;
+
+  &:hover {
+    background: $bgHover;
+  }
+}
