@@ -749,6 +749,9 @@ body {
 .header {
   position: absolute;
   width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .header__container {
@@ -844,6 +847,7 @@ body {
 
 .pets .header__container {
   padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .pets .logo__title {
@@ -950,28 +954,40 @@ body {
 @media (min-width: 480px) {
   [class*=__container] {
     max-width: clamp(480px, 100vw, 767px);
-    padding: 80px 20px 100px;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
 @media (min-width: 767px) {
   [class*=__container] {
     max-width: clamp(767px, 100vw, 1199px);
-    padding: 80px 30px 100px;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
 @media (min-width: 1199px) {
   [class*=__container] {
     max-width: clamp(992px, 100vw, 1280px);
-    padding: 80px 40px 100px;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
 @media (max-width: 480px) {
   [class*=__container] {
     max-width: clamp(300px, 100vw, 480px);
-    padding: 80px 10px 100px;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
