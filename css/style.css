@@ -614,7 +614,6 @@ body {
           align-items: flex-start;
   gap: 20px;
   max-width: 380px;
-  margin-top: -2px;
 }
 
 .donation__heading {
