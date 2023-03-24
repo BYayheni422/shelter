@@ -85,19 +85,19 @@ $responsiveType: 2;
   [class*="__container"] {
     @media (max-width: $mobile) {
       max-width: clamp(300px, 100vw, 480px);
-      padding: 0 10px;
+      padding: 80px 10px 100px;
     }
     @media (min-width: $mobile) {
       max-width: clamp(480px, 100vw, 767px);
-      padding: 0 20px;
+      padding: 80px 20px 100px;
     }
     @media (min-width: $tablet) {
       max-width: clamp(767px, 100vw, 1199px);
-      padding: 0 30px;
+      padding: 80px 30px 100px;
     }
     @media (min-width: $pc) {
       max-width: clamp(992px, 100vw, 1280px);
-      padding: 0 40px;
+      padding: 80px 40px 100px;
     }
   }
 }

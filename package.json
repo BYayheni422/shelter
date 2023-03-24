@@ -28,7 +28,7 @@
   ],
   "author": "Roman Chuchev",
   "license": "ISC",
-  "homepage": "https://github.com/RomanChuchev/shelter#readme",
+  "homepage": "https://romanchuchev.github.io/shelter/",
   "devDependencies": {
     "@babel/core": "^7.19.1",
     "@babel/polyfill": "^7.12.1",

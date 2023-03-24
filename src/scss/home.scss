@@ -8,6 +8,7 @@
 
   &__container {
     padding-top: 90px;
+    padding-bottom: 0;
   }
 
   &__content {
@@ -42,10 +43,6 @@
 /* section about */
 .about {
   background: $colorWhite;
-  &__container {
-    padding-top: 80px;
-    padding-bottom: 100px;
-  }
 
   &__content {
     padding: 0 175px;
@@ -75,16 +72,11 @@
 .our-friends {
   background: $colorLightL;
 
-  &__container {
-    padding-top: 80px;
-    padding-bottom: 97px;
-  }
-
   &__content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 60px;
+    gap: 59px;
   }
 
   &__heading {
@@ -95,7 +87,7 @@
   &__slider {
     display: flex;
     align-items: center;
-    gap: 49px;
+    gap: 53px;
   }
 
   &__cards {
@@ -164,11 +156,6 @@
 
 /* section help */
 .help {
-  &__container {
-    padding-top: 80px;
-    padding-bottom: 100px;
-  }
-
   &__content {
     display: flex;
     flex-direction: column;
@@ -212,8 +199,6 @@
   background: $colorLightL;
 
   &__container {
-    padding-top: 80px;
-    padding-bottom: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -226,6 +211,7 @@
     align-items: flex-start;
     gap: 20px;
     max-width: 380px;
+    margin-top: -2px;
   }
 
   &__heading {
