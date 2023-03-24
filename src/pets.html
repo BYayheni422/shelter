@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', { 'title': 'Pets' })
+  <body>
+    <div class="wrapper pets">
+      @@include('html/header.html', {})
+      <main class="page">
+        <section class="pets__container">
+          <div class="pets__content">
+            <h3 class="pets__title">
+              Our friends who <br />
+              are looking for a house
+            </h3>
+
+            <div class="pets__slider">
+              <div class="pets__cards">
+                <figure class="pets__card card">
+                  <img src="./images/pets/katrine.png" alt="cat Katrine" />
+                  <figcaption class="card__title">Katrine</figcaption>
+                  <a class="card__btn btn btn-secondary" href="!">Learn more</a>
+                </figure>
+
+                <figure class="pets__card card">
+                  <img src="./images/pets/jennifer.png" alt="dog Jennifer" />
+                  <figcaption class="card__title">Jennifer</figcaption>
+                  <a class="card__btn btn btn-secondary" href="!">Learn more</a>
+                </figure>
+
+                <figure class="pets__card card">
+                  <img src="./images/pets/woody.png" alt="dog Woody" />
+                  <figcaption class="card__title">Woody</figcaption>
+                  <a class="card__btn btn btn-secondary" href="!">Learn more</a>
+                </figure>
+
+                <figure class="pets__card card">
+                  <img src="./images/pets/sophia-small.png" alt="cat Sophia" />
+                  <figcaption class="card__title">Sophia</figcaption>
+                  <a class="card__btn btn btn-secondary" href="!">Learn more</a>
+                </figure>
+
+                <figure class="pets__card card">
+                  <img src="./images/pets/timmy.png" alt="cat Timmy" />
+                  <figcaption class="card__title">Timmy</figcaption>
+                  <a class="card__btn btn btn-secondary" href="!">Learn more</a>
+                </figure>
+
+                <figure class="pets__card card">
+                  <img src="./images/pets/charly-small.png" alt="dog Charly" />
+                  <figcaption class="card__title">Charly</figcaption>
+                  <a class="card__btn btn btn-secondary" href="!">Learn more</a>
+                </figure>
+
+                <figure class="pets__card card">
+                  <img src="./images/pets/scarlett.png" alt="dog Scarlett" />
+                  <figcaption class="card__title">Scarlett</figcaption>
+                  <a class="card__btn btn btn-secondary" href="!">Learn more</a>
+                </figure>
+
+                <figure class="pets__card card">
+                  <img src="./images/pets/freddie.png" alt="cat Freddie" />
+                  <figcaption class="card__title">Freddie</figcaption>
+                  <a class="card__btn btn btn-secondary" href="!">Learn more</a>
+                </figure>
+              </div>
+            </div>
+
+            <div class="pets__navigation">
+              <div class="arrow pets__arrow pets__arrow_disable">
+                <img src="./images/icons/arr-two.svg" alt="arrow-two" />
+              </div>
+
+              <div class="arrow pets__arrow pets__arrow_disable">
+                <img src="./images/icons/arr-one.svg" alt="arrow-one" />
+              </div>
+
+              <div class="arrow pets__pagination">
+                <h4>1</h4>
+              </div>
+
+              <div class="arrow pets__arrow pets__arrow_active">
+                <img src="./images/icons/arr-one-r.svg" alt="arrow-one" />
+              </div>
+
+              <div class="arrow pets__arrow pets__arrow_active">
+                <img src="./images/icons/arr-two-r.svg" alt="arrow-two" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('html/footer.html', {})
+    </div>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

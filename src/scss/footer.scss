@@ -2,6 +2,7 @@
   background: url(../images/bg/footer.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-clip: border-box;
 
   &__container {
     padding-top: 40px;
@@ -18,12 +19,28 @@
 
   &__subtitle {
     color: $colorPrimary;
+    transition: color 0.3s ease-in-out;
   }
 
   &__contact {
     display: flex;
     align-items: center;
     gap: 20px;
+    cursor: pointer;
+
+    svg path {
+      transition: fill 0.3s ease-in-out;
+    }
+
+    &:hover {
+      .footer__subtitle {
+        color: $colorLight;
+      }
+
+      svg path {
+        fill: $colorLight;
+      }
+    }
   }
 
   &__questions {

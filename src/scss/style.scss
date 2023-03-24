@@ -64,7 +64,7 @@ body {
 $responsiveType: 2;
 
 /*
-(i) Стили будут применяться ко 
+(i) Стили будут применяться ко
 всем классам содержащим *__container
 Например header__container, main__container и т.д.
 Снипет (HTML): cnt
@@ -105,4 +105,5 @@ $responsiveType: 2;
 @import "home";
 @import "footer";
 @import "header";
+@import "pets";
 // @import "config/popup";
