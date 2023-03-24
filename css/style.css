@@ -665,7 +665,7 @@ body {
 }
 
 .no-webp .footer{
-  background: url(../images/bg/footer.png); }
+  background-image: url(../images/bg/footer.png); }
 
 .footer {
   background-repeat: no-repeat;
@@ -987,4 +987,4 @@ body {
 
 .webp .not-only{ background-image: url(../images/bg/start.webp); }
 
-.webp .footer{ background: url(../images/bg/footer.webp); }
+.webp .footer{ background-image: url(../images/bg/footer.webp); }
