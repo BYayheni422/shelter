@@ -1,6 +1,8 @@
 .header {
   position: absolute;
   width: 100%;
+  height: fit-content;
+
   &__container {
     padding-top: 30px;
     padding-bottom: 0;

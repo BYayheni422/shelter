@@ -2,8 +2,10 @@
   .header {
     position: static;
     background: $colorWhite;
+
     &__container {
       padding-bottom: 30px;
+      padding-top: 30px;
     }
   }
   .logo {
@@ -51,7 +53,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 58px;
+    gap: 60px;
   }
   &__title {
     color: $colorDarkL;
