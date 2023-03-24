@@ -1,17 +1,19 @@
-/* section start */
-.start {
+/* section not-only */
+.not-only {
   background: url(../images/bg/start.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 10px;
 
   &__container {
-  }
-  &__content {
     padding-top: 90px;
+  }
+
+  &__content {
     display: flex;
     gap: 42px;
   }
+
   &__left {
     display: flex;
     flex-direction: column;
@@ -20,16 +22,14 @@
     max-width: 460px;
     gap: 42px;
   }
+
   &__right {
     padding-top: 80px;
   }
+
   &__heading {
     max-width: 310px;
     color: $colorWhite;
-  }
-  &__subheading {
-  }
-  &__btn {
   }
 
   &__img {
@@ -42,79 +42,85 @@
 .about {
   background: $colorWhite;
   &__container {
+    padding-top: 80px;
+    padding-bottom: 100px;
   }
+
   &__content {
+    padding: 0 175px;
     display: flex;
     gap: 120px;
-    padding: 80px 175px 100px;
   }
-  &__left {
-  }
-  &__img {
-  }
-  &__right {
+
+  &__flex {
     display: flex;
     flex-direction: column;
     gap: 25px;
     max-width: 430px;
     padding-top: 14px;
   }
+
   &__heading {
     color: $colorDarkL;
     max-width: 370px;
   }
+
   &__subheading {
     color: $colorDarkXl;
   }
 }
 
-/* section pets */
-.pets {
+/* section our-friends */
+.our-friends {
   background: $colorLightL;
 
   &__container {
     padding-top: 80px;
     padding-bottom: 97px;
   }
+
   &__content {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 60px;
   }
+
   &__heading {
     color: $colorDarkL;
     text-align: center;
   }
+
   &__slider {
     display: flex;
     align-items: center;
     gap: 49px;
   }
+
   &__arrow {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 23px 19px;
-
     border: 2px solid $colorPrimary;
     border-radius: 100px;
     cursor: pointer;
     transition: background 0.3s ease-in-out;
+
     &:hover {
       border: 2px solid $colorPrimaryLight;
 
       background: $colorPrimaryLight;
     }
   }
+
   &__cards {
     display: flex;
     gap: 90px;
   }
+
   &__card {
     padding-bottom: 30px;
-  }
-  &__btn {
   }
 }
 
@@ -127,8 +133,6 @@
   background: $colorLight;
   overflow: hidden;
 
-  &__img {
-  }
   &__title {
     color: $colorDarkL;
     font-family: "Georgia";
@@ -138,6 +142,7 @@
     line-height: 23px;
     letter-spacing: 0.06em;
   }
+
   &__btn {
     padding: 14px 45px;
   }
@@ -149,16 +154,19 @@
     padding-top: 80px;
     padding-bottom: 100px;
   }
+
   &__content {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 60px;
   }
+
   &__heading {
     color: $colorDarkL;
     text-align: center;
   }
+
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -167,6 +175,7 @@
     column-gap: 120px;
     width: 85.8%;
   }
+
   &__item {
     display: flex;
     flex-direction: column;
@@ -177,6 +186,7 @@
       width: 60px;
       height: 60px;
     }
+
     h4 {
       color: $colorDarkL;
     }
@@ -186,6 +196,7 @@
 /* section donation */
 .donation {
   background: $colorLightL;
+
   &__container {
     padding-top: 80px;
     padding-bottom: 100px;
@@ -194,6 +205,7 @@
     justify-content: center;
     gap: 30px;
   }
+
   &__content {
     display: flex;
     flex-direction: column;
@@ -201,21 +213,24 @@
     gap: 20px;
     max-width: 380px;
   }
+
   &__heading {
     color: $colorDarkL;
   }
+
   &__subheading {
     color: $colorDarkL;
   }
+
   &__credit-card {
     display: flex;
     align-items: center;
     padding: 10px 15px;
     gap: 15px;
-
     background: $colorPrimary;
     border-radius: 9px;
     transition: background 0.3s ease-in-out;
+
     &:hover {
       background: $bgHover;
     }
@@ -224,6 +239,7 @@
       color: $colorDarkL;
     }
   }
+
   &__description {
     font-family: "Arial";
     font-style: italic;

@@ -1,0 +1,44 @@
+.footer {
+  background: url(../images/bg/footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__container {
+    padding-top: 40px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__heading {
+    color: $colorWhite;
+  }
+
+  &__subtitle {
+    color: $colorPrimary;
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__questions {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    max-width: 280px;
+    padding-top: 16px;
+  }
+
+  &__waiting {
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+    max-width: 302px;
+    padding-top: 16px;
+  }
+}

@@ -67,6 +67,7 @@
       color: $colorLight;
       padding-bottom: 4px;
       border-bottom: 3px solid $colorPrimary;
+      pointer-events: none;
     }
   }
 }
