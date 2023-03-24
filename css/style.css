@@ -326,6 +326,7 @@ body {
 
 .not-only__container {
   padding-top: 90px;
+  padding-bottom: 0;
 }
 
 .not-only__content {
@@ -373,11 +374,6 @@ body {
   background: #ffffff;
 }
 
-.about__container {
-  padding-top: 80px;
-  padding-bottom: 100px;
-}
-
 .about__content {
   padding: 0 175px;
   display: -webkit-box;
@@ -414,11 +410,6 @@ body {
   background: #f6f6f6;
 }
 
-.our-friends__container {
-  padding-top: 80px;
-  padding-bottom: 97px;
-}
-
 .our-friends__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -430,7 +421,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 60px;
+  gap: 59px;
 }
 
 .our-friends__heading {
@@ -445,7 +436,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 49px;
+  gap: 53px;
 }
 
 .our-friends__cards {
@@ -530,11 +521,6 @@ body {
 
 /* section help */
 
-.help__container {
-  padding-top: 80px;
-  padding-bottom: 100px;
-}
-
 .help__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -600,8 +586,6 @@ body {
 }
 
 .donation__container {
-  padding-top: 80px;
-  padding-bottom: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -627,6 +611,7 @@ body {
           align-items: flex-start;
   gap: 20px;
   max-width: 380px;
+  margin-top: -2px;
 }
 
 .donation__heading {
@@ -687,6 +672,7 @@ body {
 
 .footer__container {
   padding-top: 40px;
+  padding-bottom: 0;
 }
 
 .footer__content {
@@ -767,6 +753,7 @@ body {
 
 .header__container {
   padding-top: 30px;
+  padding-bottom: 0;
 }
 
 .header__content {
@@ -853,6 +840,9 @@ body {
 .pets .header {
   position: static;
   background: #ffffff;
+}
+
+.pets .header__container {
   padding-bottom: 30px;
 }
 
@@ -894,11 +884,6 @@ body {
   pointer-events: all;
 }
 
-.pets__container {
-  padding-top: 77px;
-  padding-bottom: 100px;
-}
-
 .pets__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -910,7 +895,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 59px;
+  gap: 58px;
 }
 
 .pets__title {
@@ -965,28 +950,28 @@ body {
 @media (min-width: 480px) {
   [class*=__container] {
     max-width: clamp(480px, 100vw, 767px);
-    padding: 0 20px;
+    padding: 80px 20px 100px;
   }
 }
 
 @media (min-width: 767px) {
   [class*=__container] {
     max-width: clamp(767px, 100vw, 1199px);
-    padding: 0 30px;
+    padding: 80px 30px 100px;
   }
 }
 
 @media (min-width: 1199px) {
   [class*=__container] {
     max-width: clamp(992px, 100vw, 1280px);
-    padding: 0 40px;
+    padding: 80px 40px 100px;
   }
 }
 
 @media (max-width: 480px) {
   [class*=__container] {
     max-width: clamp(300px, 100vw, 480px);
-    padding: 0 10px;
+    padding: 80px 10px 100px;
   }
 }
 
