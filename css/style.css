@@ -320,6 +320,7 @@ body {
 .not-only {
   background-repeat: no-repeat;
   background-size: cover;
+  background-clip: border-box;
   padding-top: 10px;
 }
 
@@ -681,6 +682,7 @@ body {
 .footer {
   background-repeat: no-repeat;
   background-size: cover;
+  background-clip: border-box;
 }
 
 .footer__container {
