@@ -306,7 +306,7 @@ body {
 }
 
 /*
-(i) Стили будут применяться ко 
+(i) Стили будут применяться ко
 всем классам содержащим *__container
 Например header__container, main__container и т.д.
 Снипет (HTML): cnt
@@ -447,31 +447,6 @@ body {
   gap: 49px;
 }
 
-.our-friends__arrow {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 23px 19px;
-  border: 2px solid #f1cdb3;
-  border-radius: 100px;
-  cursor: pointer;
-  -webkit-transition: background 0.3s ease-in-out;
-  -o-transition: background 0.3s ease-in-out;
-  transition: background 0.3s ease-in-out;
-}
-
-.our-friends__arrow:hover {
-  border: 2px solid #fddcc4;
-  background: #fddcc4;
-}
-
 .our-friends__cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -479,8 +454,29 @@ body {
   gap: 90px;
 }
 
-.our-friends__card {
-  padding-bottom: 30px;
+.arrow {
+  border: 2px solid #f1cdb3;
+  border-radius: 100px;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease-in-out;
+  -o-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+  width: 52px;
+  height: 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.arrow:hover {
+  border: 2px solid #fddcc4;
+  background: #fddcc4;
 }
 
 .card {
@@ -498,6 +494,20 @@ body {
   border-radius: 9px;
   background: #fafafa;
   overflow: hidden;
+  padding-bottom: 30px;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease-in-out;
+  -o-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+
+.card:hover {
+  background: #ffffff;
+}
+
+.card:hover .card__btn {
+  background: #fddcc4;
+  border: 2px solid #fddcc4;
 }
 
 .card__title {
@@ -512,6 +522,9 @@ body {
 
 .card__btn {
   padding: 14px 45px;
+  -webkit-transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+  -o-transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
 }
 
 /* section help */
@@ -681,7 +694,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  cursor: pointer;
 }
 
 .footer__heading {
@@ -690,6 +702,9 @@ body {
 
 .footer__subtitle {
   color: #f1cdb3;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .footer__contact {
@@ -700,6 +715,21 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 20px;
+  cursor: pointer;
+}
+
+.footer__contact svg path {
+  -webkit-transition: fill 0.3s ease-in-out;
+  -o-transition: fill 0.3s ease-in-out;
+  transition: fill 0.3s ease-in-out;
+}
+
+.footer__contact:hover .footer__subtitle {
+  color: #fafafa;
+}
+
+.footer__contact:hover svg path {
+  fill: #fafafa;
 }
 
 .footer__questions {
@@ -754,7 +784,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
-  line-height: 35px;
+  line-height: 110%;
   letter-spacing: 0.06em;
   color: #f1cdb3;
 }
@@ -798,7 +828,7 @@ body {
   color: #fafafa;
 }
 
-.menu__link_active {
+.menu__link_about {
   color: #fafafa;
   padding-bottom: 4px;
   border-bottom: 3px solid #f1cdb3;
@@ -811,6 +841,123 @@ body {
 
 .burger {
   display: none;
+}
+
+.pets {
+  /* slider */
+  background: #f6f6f6;
+}
+
+.pets .header {
+  position: static;
+  background: #ffffff;
+  padding-bottom: 30px;
+}
+
+.pets .logo__title {
+  color: #545454;
+}
+
+.pets .logo__subtitle {
+  color: #292929;
+}
+
+.pets .menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 36px;
+  padding-bottom: 3px;
+  padding-right: 1px;
+}
+
+.pets .menu__link {
+  color: #545454;
+}
+
+.pets .menu__link:hover {
+  color: #292929;
+}
+
+.pets .menu__link_pets {
+  color: #292929;
+  padding-bottom: 4px;
+  border-bottom: 3px solid #f1cdb3;
+  pointer-events: none;
+}
+
+.pets .menu__link_about {
+  padding-bottom: none;
+  border-bottom: none;
+  pointer-events: all;
+}
+
+.pets__container {
+  padding-top: 77px;
+  padding-bottom: 100px;
+}
+
+.pets__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 59px;
+}
+
+.pets__title {
+  color: #545454;
+  text-align: center;
+}
+
+.pets__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  row-gap: 30px;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.pets__card {
+  max-width: 270px;
+}
+
+.pets__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.pets__pagination {
+  background: #f1cdb3;
+  pointer-events: none;
+}
+
+.pets__pagination h4 {
+  color: #292929;
+}
+
+.pets__arrow {
+  border: 2px solid #cdcdcd;
+}
+
+.pets__arrow_active {
+  border: 2px solid #f1cdb3;
+}
+
+.pets__arrow_disable {
+  pointer-events: none;
 }
 
 @media (min-width: 480px) {
