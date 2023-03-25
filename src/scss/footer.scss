@@ -10,6 +10,7 @@
 
   &__content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
@@ -44,18 +45,43 @@
   }
 
   &__questions {
-    display: flex;
-    flex-direction: column;
     gap: 42px;
     max-width: 280px;
     padding-top: 16px;
   }
 
   &__waiting {
-    display: flex;
-    flex-direction: column;
     gap: 33px;
     max-width: 302px;
     padding-top: 16px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: $pc) {
+    &__container {
+      padding-top: 12px;
+    }
+
+    &__content {
+      justify-content: center;
+      column-gap: 60px;
+      row-gap: 65px;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      flex: 0 0 50%;
+    }
+
+    &__image {
+      max-width: 300px;
+      max-height: 310px;
+      align-self: center;
+    }
   }
 }
